@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Tic-Tac-Toe.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <h1 align="center">Tic Tac Toe</h1>
+    <h2>Let the game begin</h2>
+    <div class="container">
+        <div id="control" class="control">
+            <button id="reset" type="button" class="btn btn-info" onclick="resetBoard()"> Reset </button>
+        </div>
+    </div>
+
+    <div class="notification" id="notify"> </div>
+    <div class="container board">
+        <div class="row">
+            <div class="col" onclick="playerMover(this,0,0)"></div>
+            <div class="col" onclick="playerMover(this,0,1)"></div>
+            <div class="col" onclick="playerMover(this,0,2)"></div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="playerMover(this,1,0)"></div>
+            <div class="col" onclick="playerMover(this,1,1)"></div>
+            <div class="col" onclick="playerMover(this,1,2)"></div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="playerMover(this,2,0)"></div>
+            <div class="col" onclick="playerMover(this,2,1)"></div>
+            <div class="col" onclick="playerMover(this,2,2)"></div>
+        </div>
+    </div>
+
+    <script src="Tic-Tac-Toe.js"></script>
+
+</html>
